@@ -6,9 +6,9 @@ for Institute of Design and Urban Studies (IDU). It includes basic metadata
 such as versioning, author information, and license details.
 """
 
-import importlib
+import importlib.metadata
 
-__version__ = importlib.metadata.version("everyday_palette") # TODO поменять название в соответствии с pyproject.toml
+__version__ = importlib.metadata.version("everyday_palette")
 __author__ = "Vasilii Starikov"
 __email__ = "vasilstar97@gmail.com"
 __credits__ = []
