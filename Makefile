@@ -16,7 +16,7 @@ venv: # затем необходимо активировать: source .venv/b
 	python3 -m venv .venv
 
 install: # простая установка зависимостей без editable режима
-	pip install .
+	pip install -e .
 
 install-dev: # установка зависимостей для разработки
 	pip install -e '.[dev]'

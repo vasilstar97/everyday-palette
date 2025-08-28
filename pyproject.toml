@@ -3,7 +3,7 @@ requires = ["setuptools>=64.0", "setuptools_scm[toml]>=8.0"]
 build-backend = "setuptools.build_meta"
 
 [project] # метаданные проекта
-name = "my_package" # название вашего проекта
+name = "everyday_palette" # название вашего проекта
 dynamic = ["version"]
 authors = [
     { name = "Vasilii Starikov", email = "vasilstar97@gmail.com" },
@@ -14,7 +14,8 @@ requires-python = ">=3.10"
 license = { file = "LICENCE" }
 
 dependencies = [ # здесь необходимо вести все устанавливаемые зависимости: пакеты, которые необходимы для адекватной работы вашей библиотеки
-    "geopandas>=1.0.0,<2.0.0",
+    "colormath",
+    "requests",
 ]
 
 classifiers = [ # метаданные для описания проекта пользователям, например, на PyPI: какая лицензия, какое предназначение
@@ -25,7 +26,7 @@ classifiers = [ # метаданные для описания проекта п
 ]
 
 [tool.setuptools.packages.find] # что включать в сборку при установке
-include = ["my_package*"]
+include = ["everyday_palette*"]
 
 [tool.setuptools_scm]
 version_scheme = "post-release"
@@ -34,7 +35,6 @@ local_scheme = "no-local-version"
 [project.optional-dependencies]
 dev = [ # зависимости, необходимые для разработки библиотеки, но не для её использования
     "black[jupyter]==22.3",     # Форматирование, включая поддержку Jupyter
-    "mapclassify==2.6.1",       # Визуализация данных в Jupyter
     "folium==0.14.0",           # Карты для Jupyter
     "matplotlib-inline==0.1.6", # Встроенные графики в Jupyter
     "ipykernel",                # Ядро для работы в Jupyter
