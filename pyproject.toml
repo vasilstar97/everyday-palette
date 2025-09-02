@@ -16,7 +16,7 @@ license = { file = "LICENCE" }
 dependencies = [ # здесь необходимо вести все устанавливаемые зависимости: пакеты, которые необходимы для адекватной работы вашей библиотеки
     "coloraide",
     "requests",
-    "sklearn",
+    "scikit-learn",
     'tqdm',
     'yandex-cloud-ml-sdk',
     'aiogram',
