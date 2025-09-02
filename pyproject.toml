@@ -14,8 +14,12 @@ requires-python = ">=3.10"
 license = { file = "LICENCE" }
 
 dependencies = [ # здесь необходимо вести все устанавливаемые зависимости: пакеты, которые необходимы для адекватной работы вашей библиотеки
-    "colormath",
+    "coloraide",
     "requests",
+    "sklearn",
+    'tqdm',
+    'yandex-cloud-ml-sdk',
+    'aiogram',
 ]
 
 classifiers = [ # метаданные для описания проекта пользователям, например, на PyPI: какая лицензия, какое предназначение

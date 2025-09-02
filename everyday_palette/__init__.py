@@ -14,4 +14,8 @@ __email__ = "vasilstar97@gmail.com"
 __credits__ = []
 __license__ = "BSD-3"
 
-from .palette import Palette
+from .palette import *
+from .processor import *
+from .generator import *
+from .gpt import *
+from .telegram import *

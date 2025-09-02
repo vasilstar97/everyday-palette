@@ -1,0 +1,1 @@
+{"generator_cls": "GMMGenerator", "model_cls": "GaussianMixture", "model_params": {"n_components": 15}}
